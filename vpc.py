@@ -4,7 +4,7 @@ import time
 security_group = 'sg-05a86a257ba98841b'
 private_subnet_1 = 'subnet-026c4a23a8c65051a'
 private_subnet_2 = 'subnet-0757537ac8f578e34'
-staging_name = 'recoverydynamodb-manually'
+staging_name = 'recoverydynamodb-manually
 
 def lambda_configrations_update(security_group,private_subnet_1,private_subnet_2):
     count=0
@@ -12,7 +12,7 @@ def lambda_configrations_update(security_group,private_subnet_1,private_subnet_2
         lambda_client = boto3.client('lambda')
         function_name = staging_name
         vpc_config = {
-            'SubnetIds': [private_subnet_1, private_subnet_2],
+            'SubnetIds': [private_subnet_1 private_subnet_2]:
             'SecurityGroupIds': [security_group]
         }
 
